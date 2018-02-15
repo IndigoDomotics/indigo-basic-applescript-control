@@ -33,5 +33,5 @@ remain constant for the lifetime of the object, even if it is renamed. Note that
 
 The biggest caveat to this technique is that it is slow. Under-the-hood each call requires a new Indigo host process to be created temporarily
 pass the command to Indigo. If you have several commands that need to be executed back-to-back then this probably isn't the best
-solution, although adding all the commands to an Action Group in Indigo and executiung the Action Group
+solution, although adding all the commands to an Action Group in Indigo and executing the Action Group
 instead would prevent the slowness.
