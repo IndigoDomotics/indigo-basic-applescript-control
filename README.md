@@ -11,8 +11,8 @@ There are a couple of different ways to use AppleScript to control Indigo device
 Download the IndigoControl.applescript file from this github repository. Use the file (or copy/paste its contents)
 into the AppleScript you are using. You can then use its internally defined functions to control Indigo, like this:
 
-```executActionGroup_byName("cooking scene")
-executActionGroup_byID("1969538881")
+```executeActionGroup_byName("cooking scene")
+executeActionGroup_byID("1969538881")
 
 turnOn_byName("office lamp")
 turnOff_byName("office lamp")
