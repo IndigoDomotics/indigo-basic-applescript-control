@@ -24,13 +24,13 @@ end _executeIphCommand
 
 -------------------------------------------------
 -- Helper functions for executing an action group (by name or ID):
-on executActionGroup_byName(groupName)
+on executeActionGroup_byName(groupName)
 	_executeIphCommand("indigo.actionGroup.execute(\"" & groupName & "\")")
-end executActionGroup_byName
+end executeActionGroup_byName
 
-on executActionGroup_byID(groupID)
+on executeActionGroup_byID(groupID)
 	_executeIphCommand("indigo.actionGroup.execute(" & groupID & ")")
-end executActionGroup_byID
+end executeActionGroup_byID
 
 -------------------------------------------------
 -- Helper functions for on/off control of a devices (by name or ID):
@@ -71,8 +71,8 @@ end updateVariable_byID
 -------------------------------------------------
 -- Examples (uncomment or replace with your calls):
 
---executActionGroup_byName("cooking scene")
---executActionGroup_byID("1969538881")
+--executeActionGroup_byName("cooking scene")
+--executeActionGroup_byID("1969538881")
 --
 --turnOn_byName("office lamp")
 --turnOff_byName("office lamp")
