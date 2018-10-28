@@ -1,10 +1,13 @@
 -------------------------------------------------
 -- Internal functions for dispatching commands to Indigo's python scripting engine:
 on _getIphPath()
+	set iph72 to "/Library/Application Support/Perceptive Automation/Indigo 7.2/IndigoPluginHost.app/Contents/MacOS/IndigoPluginHost"
 	set iph7 to "/Library/Application Support/Perceptive Automation/Indigo 7/IndigoPluginHost.app/Contents/MacOS/IndigoPluginHost"
 	set iph6 to "/Library/Application Support/Perceptive Automation/Indigo 6/IndigoPluginHost.app/Contents/MacOS/IndigoPluginHost"
 	set iph5 to "/Library/Application Support/Perceptive Automation/Indigo 5/IndigoPluginHost.app/Contents/MacOS/IndigoPluginHost"
 	tell application "System Events"
+		if exists file iph72 then
+			return iph72
 		if exists file iph7 then
 			return iph7
 		else if exists file iph6 then
