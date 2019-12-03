@@ -9,9 +9,9 @@ on _getIphPath()
 	tell application "System Events"
 		if exists file iph then
 			return iph
-		if exists file iph72 then
+		else if exists file iph72 then
 			return iph72
-		if exists file iph7 then
+		else if exists file iph7 then
 			return iph7
 		else if exists file iph6 then
 			return iph6
